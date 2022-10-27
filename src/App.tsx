@@ -1,5 +1,5 @@
-import { SignIn } from "./pages/SingIn";
-import "./style/global.css"
+import { SignIn } from "./pages/SignIn";
+import "./style/global.css";
 
 export function App() {
 
