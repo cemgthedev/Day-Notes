@@ -1,9 +1,9 @@
-import { Checkbox } from "@radix-ui/react-checkbox";
 import { Envelope, Lock } from "phosphor-react";
 import { Button } from "../components/Button";
 import { Heading } from "../components/Heading";
 import { TextInput } from "../components/TextInput";
 import { Text } from "../components/Text";
+import { Checkbox } from "../components/Checkbox";
 import { Logo } from "../Logo";
 import { FormEvent, useState } from "react";
 
@@ -55,7 +55,7 @@ export function SignIn() {
                     </label>
 
                     <label htmlFor="remember" className="flex items-center gap-2">
-                        <Checkbox id="remember" />
+                        <Checkbox id="remember"/>
                         <Text size="sm" className="text-gray-400">Lembrar de mim por 30 dias</Text>
                     </label>
 
@@ -63,11 +63,11 @@ export function SignIn() {
                 </form>
 
                 <footer className="flex flex-col items-center gap-2 mt-4">
-                    <Text asChild size="sm">
-                        <a href="" className="text-gray-400 underline">Esqueceu sua senha?</a>
+                    <Text asChild size="sm" className="hover:text-cyan-500">
+                        <a href="" className="underline">Esqueceu sua senha?</a>
                     </Text>
-                    <Text asChild size="sm">
-                        <a href="" className="text-gray-400 underline">Não possui conta? Crie uma agora!</a>
+                    <Text asChild size="sm" className="hover:text-cyan-500">
+                        <a href="" className="underline">Não possui conta? Crie uma agora!</a>
                     </Text>
                 </footer>
             </div>    
